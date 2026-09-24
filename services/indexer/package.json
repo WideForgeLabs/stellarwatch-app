@@ -1,0 +1,17 @@
+{
+  "name": "@stellarwatch/indexer",
+  "version": "0.1.0",
+  "description": "Event listener and alert dispatcher for StellarWatch",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^13.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "license": "MIT"
+}
