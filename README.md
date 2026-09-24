@@ -1,10 +1,15 @@
-# StellarWatch App
+StellarWatch App
 
 Dashboard, SDK, and indexer for StellarWatch — on-chain health monitoring for Soroban contracts.
 
 ## What This Is
 
+## What This Is
+
 The application layer for StellarWatch. It reads from the on-chain contracts in [stellarwatch-contract](https://github.com/WideForgeLabs/stellarwatch-contract) and surfaces health data through a web dashboard.
+
+![StellarWatch Dashboard](assets/dashboard.png)
+
 
 ## Components
 
