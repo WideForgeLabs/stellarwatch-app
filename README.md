@@ -1,15 +1,18 @@
-StellarWatch App
+# StellarWatch App
 
 Dashboard, SDK, and indexer for StellarWatch — on-chain health monitoring for Soroban contracts.
 
-## What This Is
+[![Live Demo](https://img.shields.io/badge/demo-live-green.svg)](https://stellarwatch-app-web.vercel.app)
+[![CI](https://github.com/WideForgeLabs/stellarwatch-app/actions/workflows/ci.yml/badge.svg)](https://github.com/WideForgeLabs/stellarwatch-app/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## What This Is
 
 The application layer for StellarWatch. It reads from the on-chain contracts in [stellarwatch-contract](https://github.com/WideForgeLabs/stellarwatch-contract) and surfaces health data through a web dashboard.
 
-![StellarWatch Dashboard](assets/dashboard.png)
+**Live demo:** https://stellarwatch-app-web.vercel.app
 
+![StellarWatch Dashboard](assets/dashboard.png)
 
 ## Components
 
@@ -20,7 +23,7 @@ The application layer for StellarWatch. It reads from the on-chain contracts in 
 
 ## Status
 
-Working proof-of-concept. The dashboard reads live data from all three testnet contracts.
+Working proof-of-concept. The dashboard reads live data from all three testnet contracts and is deployed on Vercel.
 
 See [open issues](https://github.com/WideForgeLabs/stellarwatch-app/issues) for work available to contributors.
 
