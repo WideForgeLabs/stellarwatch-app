@@ -20,7 +20,9 @@ The application layer for StellarWatch. It reads from the on-chain contracts in 
 
 ## Status
 
-Early scaffolding. Building in parallel with the contract repo.
+Working proof-of-concept. The dashboard reads live data from all three testnet contracts.
+
+See [open issues](https://github.com/WideForgeLabs/stellarwatch-app/issues) for work available to contributors.
 
 ## Related Repositories
 
