@@ -9,9 +9,10 @@
     "services/*"
   ],
   "scripts": {
-    "build": "cd packages/sdk && npm run build && cd ../../apps/web && npm run build",
-    "build:sdk": "cd packages/sdk && npm run build",
-    "build:web": "cd apps/web && npm run build"
+    "build": "npm run build --workspace=@stellarwatch/sdk && npm run build --workspace=@stellarwatch/web",
+    "build:sdk": "npm run build --workspace=@stellarwatch/sdk",
+    "build:web": "npm run build --workspace=@stellarwatch/web",
+    "dev": "npm run dev --workspace=@stellarwatch/web"
   },
   "license": "MIT"
 }

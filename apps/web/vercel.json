@@ -1,6 +1,6 @@
 {
-  "buildCommand": "cd ../.. && cd packages/sdk && npm install && npm run build && cd ../../apps/web && npm install && npm run build",
-  "installCommand": "echo 'skip'",
-  "outputDirectory": ".next",
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "installCommand": "cd ../.. && npm install --workspaces",
+  "buildCommand": "cd ../.. && npm run build --workspace=@stellarwatch/sdk && npm run build --workspace=@stellarwatch/web",
+  "outputDirectory": ".next"
 }
