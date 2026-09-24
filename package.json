@@ -1,0 +1,17 @@
+{
+  "name": "stellarwatch-app-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monorepo for StellarWatch app: SDK, web dashboard, and indexer",
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "services/*"
+  ],
+  "scripts": {
+    "build": "cd packages/sdk && npm run build && cd ../../apps/web && npm run build",
+    "build:sdk": "cd packages/sdk && npm run build",
+    "build:web": "cd apps/web && npm run build"
+  },
+  "license": "MIT"
+}
