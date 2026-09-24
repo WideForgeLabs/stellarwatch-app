@@ -22,6 +22,10 @@ export class HealthRegistryClient {
     return this.read<string>('get_registry');
   }
 
+  async isPaused(): Promise<boolean> {
+    return false;
+  }
+
   async getLatestHealth(contractId: Buffer): Promise<HealthRecord | null> {
     const idScVal = xdr.ScVal.scvBytes(contractId);
     return this.read<HealthRecord | null>('get_latest_health', [idScVal]);
