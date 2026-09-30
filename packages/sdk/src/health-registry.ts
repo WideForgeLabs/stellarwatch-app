@@ -47,16 +47,18 @@ export class HealthRegistryClient {
       .setTimeout(30)
       .build();
 
-    const result = await this.server.simulateTransaction(tx);
+    const rawResponse: any = await (this.server as any)._simulateTransaction(tx);
 
-    if (rpc.Api.isSimulationError(result)) {
-      throw new Error(`Simulation failed: ${result.error}`);
+    if (rawResponse.error) {
+      throw new Error(`Simulation error: ${rawResponse.error}`);
     }
 
-    if (!rpc.Api.isSimulationSuccess(result) || !result.result) {
-      throw new Error('No result from simulation');
+    const retvalXdr = rawResponse.results?.[0]?.xdr;
+    if (!retvalXdr) {
+      throw new Error('No return value from simulation');
     }
 
-    return scValToNative(result.result.retval) as T;
+    const retval = xdr.ScVal.fromXDR(retvalXdr, 'base64');
+    return scValToNative(retval) as T;
   }
 }

@@ -9,7 +9,7 @@
     "test": "echo 'no tests yet'"
   },
   "dependencies": {
-    "@stellar/stellar-sdk": "^13.0.0"
+    "@stellar/stellar-sdk": "^12.3.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

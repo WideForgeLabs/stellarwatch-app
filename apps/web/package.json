@@ -9,11 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@stellar/stellar-sdk": "^12.3.0",
+    "@stellarwatch/sdk": "file:../../packages/sdk",
     "next": "^15.1.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "@stellarwatch/sdk": "file:../../packages/sdk",
-    "@stellar/stellar-sdk": "^13.0.0"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
