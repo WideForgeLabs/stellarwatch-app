@@ -16,7 +16,7 @@ The application layer for StellarWatch. It reads from the on-chain contracts in 
 
 ## Components
 
-- **packages/sdk** — TypeScript client wrappers for the StellarWatch contracts
+- **packages/sdk** — [TypeScript client wrappers](packages/sdk/README.md) for the StellarWatch contracts
 - **apps/web** — Next.js dashboard for viewing health status and managing alerts
 - **services/indexer** — Event listener that stores health history and dispatches alerts
 - **docs** — SDK reference and API documentation
