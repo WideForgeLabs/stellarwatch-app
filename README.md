@@ -45,3 +45,24 @@ Join the StellarForge Developers Telegram group: [t.me/StellarForgeDevCodes](htt
 ## License
 
 MIT
+
+## Local development with Docker
+
+Start a local Postgres database with the schema pre-loaded:
+
+    docker compose up -d
+
+This starts Postgres on port 5432 and automatically applies `services/indexer/migrations/001_init.sql`. The database contains three tables:
+
+- `contracts` — registered contracts
+- `health_records` — health check history
+- `alert_rules` — alert rule definitions
+
+To connect:
+
+    docker compose exec postgres psql -U stellarwatch -d stellarwatch
+
+To stop:
+
+    docker compose down
+
