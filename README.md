@@ -23,7 +23,7 @@ The application layer for StellarWatch. It reads from the on-chain contracts in 
 
 ## Status
 
-Working proof-of-concept. The dashboard reads live data from all three testnet contracts and is deployed on Vercel.
+Active development. The dashboard is live on Vercel reading data from all three testnet contracts. The indexer has a Postgres schema and Docker setup ready for implementation (issue #7).
 
 See [open issues](https://github.com/WideForgeLabs/stellarwatch-app/issues) for work available to contributors.
 
@@ -65,4 +65,6 @@ To connect:
 To stop:
 
     docker compose down
+
+See `.env.example` for the environment variables needed by the indexer.
 
